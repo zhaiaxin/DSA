@@ -1,25 +1,27 @@
- /* This is the English annotation I wrote according to my own understanding, 
-    if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/bubblesort/bubble1a.cpp.htm
- 
-    Tips: T(n) = O(n^2) 
- */
+/* Subject: sort an array in positive order */
 
- /* To see the process in the TERMINAL, remove the 1'and 2' comments */
+/* This is the English annotation I wrote, according to my own understanding, 
+   if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/bubblesort/bubble1a.cpp.htm
+ 
+   Tips: T(n) = O(n^2) 
+*/
+
+/* To see the process in the TERMINAL, remove the 1'and 2' comments */
 
 #include <utility>  // std:swap()
 
-#include "utility.cpp"
+#include "../utility.cpp"
 
 using namespace std;
 
 void bubbleSort( int A[], int n){ 
 
-    /* int size = n;    // 1': get the size of A[] */
+    int size = n;    // 1': get the size of A[] 
 
     bool sorted = false;    // Default value - 'false' : the A[] is NOT sorted
     while( !sorted ){   // it loops until A[] is sorted
         
-        /* printArray( A, size );   // 2': print all the elements in A[] */
+        printArray( A, size );   // 2': print all the elements in A[]
         
         sorted = true;     // Assuming the A[] is in order
         for( int i = 1; i < n; i++ ){   // perform ONE bubble sort
