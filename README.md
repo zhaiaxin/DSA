@@ -8,6 +8,7 @@ DSA is designed to keep track of my growth in Data Structure Algorithm.
 
 - [Environment](#Environment)
 - [Reference](#Reference)
+- [Method](#Method)
 
 
 ## Environment
@@ -41,3 +42,7 @@ Course:
 Book:
 - [数据结构(C++语言版) 及其习题解析](https://dsa.cs.tsinghua.edu.cn/~deng/ds/dsacpp/)
 
+## Method
+
+main idea :  
+- Instead of passive learning, you should study more actively.
