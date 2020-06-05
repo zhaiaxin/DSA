@@ -3,14 +3,14 @@
 /* This is the English annotation I wrote, according to my own understanding, 
    if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/countones/countones.cpp.htm
  
-   Tips: T(n) = O(n) 
+   Tips: T(n) = O(logn) - "logarithmic-time/polylogarithmic algorithm" , because n >>= 1 equals to n = n / 2
 */
 
 #include "../utility.cpp"   // printArray()
 
 using namespace std;
 
-int countOnes(unsigned int n){
+int countOnes( unsigned int n ){
     int ones = 0;
     while( n > 0 ){
         /*  In comparison to the follow code statement, it costs extra time for jugding
@@ -27,12 +27,12 @@ int countOnes(unsigned int n){
 int main(){
     
     int A[] = { 15, 14, 12, 8 }; 
-    int n = sizeof(A)/sizeof(*A);   // sizeof(): return the size of data type in bytes
+    int n = sizeof( A ) / sizeof( *A );   // sizeof(): return the size of data type in bytes
 
     int ones[n];
 
     for(int i = 0; i < n; i++){
-        ones[i] = countOnes(A[i]);
+        ones[i] = countOnes( A[i] );
     }
 
     printArray( ones, n );

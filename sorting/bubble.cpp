@@ -3,41 +3,41 @@
 /* This is the English annotation I wrote, according to my own understanding, 
    if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/bubblesort/bubble1a.cpp.htm
  
-   Tips: T(n) = O(n^2) 
+   Tips: T(n) = O(n^2) - "polynomial-time algorithm"
 */
 
 /* To see the process in the TERMINAL, remove the 1'and 2' comments */
 
 #include <utility>  // std:swap()
 
-#include "../utility.cpp"
+#include "../utility.cpp"  // printArray()
 
 using namespace std;
 
 void bubbleSort( int A[], int n){ 
 
-    int size = n;    // 1': get the size of A[] 
+    int size = n;  // 1': get the size of A[] 
 
-    bool sorted = false;    // Default value - 'false' : the A[] is NOT sorted
-    while( !sorted ){   // it loops until A[] is sorted
+    bool sorted = false;  // Default value - 'false' : the A[] is NOT sorted
+    while( !sorted ){  // it loops until A[] is sorted
         
-        printArray( A, size );   // 2': print all the elements in A[]
+        printArray( A, size );  // 2': print all the elements in A[]
         
-        sorted = true;     // Assuming the A[] is in order
-        for( int i = 1; i < n; i++ ){   // perform ONE bubble sort
+        sorted = true;  // Assuming the A[] is in order
+        for( int i = 1; i < n; i++ ){  // perform ONE bubble sort
             if( A[i-1] > A[i] ){
                 swap( A[i-1], A[i] );
             }
-            sorted = false;    // After one sort is completed, the A[] CAN'T be judged as TOTALLY ordered
+            sorted = false;  // After one sort is completed, the A[] CAN'T be judged as TOTALLY ordered
         }
-        n--;    // Each time the loop is finished, one element will be placed in its final position.
+        n--;  // Each time the loop is finished, one element will be placed in its final position.
     }
-}   // Better than for{for{}}, it can break the loop ASAP.
+}  // Better than for{for{}}, it can break the loop ASAP.
 
 int main(){
 
-    int A[] = {5,2,7,4,6,3,1};
-    int n = sizeof(A)/sizeof(*A);   // sizeof(): return the size of data type in bytes. 
+    int A[] = { 5, 2, 7, 4, 6, 3, 1 };
+    int n = sizeof( A ) / sizeof( *A );  // sizeof(): return the size of data type in bytes. 
 
     bubbleSort( A, n );
 
