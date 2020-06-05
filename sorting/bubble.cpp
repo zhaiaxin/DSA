@@ -14,7 +14,7 @@
 
 using namespace std;
 
-void bubbleSort( int A[], int n){ 
+void bubbleSort( int A[], int n ){ 
 
     int size = n;  // 1': get the size of A[] 
 

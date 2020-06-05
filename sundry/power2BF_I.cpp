@@ -6,7 +6,7 @@
    Tips: T(n) = O(n) = O(2^r) [r is the size of exponent n in bits ] - "for n is linear-time algorithm", "for r is exponential-time algorithm"
 */
 
-#include <iostream>  // cout
+#include <iostream>  // __int64, cout
 
 using namespace std;
 
