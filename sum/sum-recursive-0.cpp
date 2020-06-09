@@ -22,5 +22,5 @@ int main(){
     int A[] = { 1, 2, 3, 4, 5, 6 };
     int n = sizeof( A ) / sizeof( *A );  // sizeof(): return the size of data type in bytes
 
-    cout << "sum( A, n ):\t" << sum( A, n ) << endl;
+    cout << sum( A, n ) << endl;
 }

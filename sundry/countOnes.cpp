@@ -1,11 +1,7 @@
-/* Subject: for any non-negative integer, count the number of digits 1 in its binary expansion */
-
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/countones/countones.cpp.htm
- 
-   Tips: T(n) = O(logn) - "logarithmic-time/polylogarithmic algorithm" , because n >>= 1 equals to n = n / 2
-*/
-
+/* Question: for any non-negative integer, count the number of digits 1 in its binary expansion */
+  
+/* For Chinese annotation, go to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/countones/countones.cpp.htm */
+  
 #include "../utility.cpp"   // printArray()
 
 using namespace std;
@@ -18,7 +14,7 @@ int countOnes( unsigned int n ){
             ones++;
         }
         */
-        ones += ( n & 1);   // &: bit operation "AND", it will operate the binary form of two numbers
+        ones += ( n & 1 );   // &: bit operation "AND", it will operate the binary form of two numbers
         n >>= 1;
     }
     return ones;
@@ -40,13 +36,13 @@ int main(){
 }
 
 /*
-    analysis:
+    analysis:                   result: 4 3 2 1
 
         15(d) = 1111(b) 
         14(d) = 1110(b) 
         12(d) = 1100(b)
         8(d)  = 1000(b)
 
-    result: 4 3 2 1
+    Time Complexity: O(logn) - "logarithmic-time/polylogarithmic algorithm" , because n >>= 1 equals to n = n / 2
 
-    */
+*/
