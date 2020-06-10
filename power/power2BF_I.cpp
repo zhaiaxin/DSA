@@ -1,10 +1,6 @@
-/* Subject: compute the n powers of 2 for any non-negative integer n, with no shift operation more than one digit */
-
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/power/power2-0-i.cpp.htm
-
-   Tips: T(n) = O(n) = O(2^r) [r is the size of exponent n in bits ] - "for n is linear-time algorithm", "for r is exponential-time algorithm"
-*/
+/* Question: compute the n powers of 2 for any non-negative integer n, with no shift operation more than one digit */
+  
+/* For Chinese annotation, https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/power/power2-0-i.cpp.htm */
 
 #include <iostream>  // __int64, cout
 
@@ -33,5 +29,7 @@ int main(){
     result: power2BF_I(n) = 1125899906842624 = 2^50
 
     tips: 2^6 < 50 < 2^7, r =  rounded down(log_2 50) + 1  = 6 + 1 = 7 
+
+    Time Complexity: O(n) = O(2^r) [r is the size of exponent n in bits ] - "for n is linear-time algorithm", "for r is exponential-time algorithm"
 
 */

@@ -1,11 +1,6 @@
-/* Subject: compute the n powers of 2 for any non-negative integer n, with no shift operation more than one digit */
-
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to http://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/power/power2-1-r.cpp.htm
-
-   Tips: T(n) = O(logn) = O(r) [r is the size of exponent n in bits ] - "for n is logarithmic-time algorithm", "for r is linear-time algorithm"
-*/
-
+/* Question: compute the n powers of 2 for any non-negative integer n, with no shift operation more than one digit */
+  
+/* For Chinese annotation, http://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/power/power2-1-r.cpp.htm */
 
 #include <iostream>  // __int64, cout
 
@@ -36,5 +31,7 @@ int main(){
 
     
     power2(5) = power2(2)^2 * 2 = [power2(1)^2]^2 * 2 = ({[power2(0)^2]*2}^2)^2 * 2 = 2^5 = 32
+
+    O(logn) = O(r) [r is the size of exponent n in bits ] - "for n is logarithmic-time algorithm", "for r is linear-time algorithm"
 
 */

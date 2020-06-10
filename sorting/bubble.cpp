@@ -1,10 +1,6 @@
-/* Subject: sort an array in positive order */
-
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/bubblesort/bubble1a.cpp.htm
- 
-   Tips: T(n) = O(n^2) - "polynomial-time algorithm"
-*/
+/* Question: sort an array in positive order */
+  
+/* For Chinese annotation, https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/bubblesort/bubble1a.cpp.htm */
 
 /* To see the process in the TERMINAL, remove the 1'and 2' comments */
 
@@ -52,4 +48,6 @@ int main(){
         d:    2 3 1 4 5 6 7
         e:    2 1 3 4 5 6 7
         f:    1 2 3 4 5 6 7
+
+    Time Complexity: O(n^2) - "polynomial-time algorithm"
 */

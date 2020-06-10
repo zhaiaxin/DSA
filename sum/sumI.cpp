@@ -1,10 +1,6 @@
-/* Subject: calculate the sum of the given n integers */
-
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/sum/sum0.cpp.htm
- 
-   Tips: T(n) = O(n) - "linear-time algorithm"
-*/
+/* Question: calculate the sum of the given n integers */
+  
+/* For Chinese annotation, https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/sum/sum0.cpp.htm */
 
 #include <iostream>  // cout
 
@@ -28,3 +24,5 @@ int main(){
     cout << sum << endl;
     
 }
+
+/* Time Complexity: O(n) - "linear-time algorithm" */

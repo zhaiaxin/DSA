@@ -1,10 +1,6 @@
-/* Subject: calculate the sum of the given n integers in a recursive method*/
-
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/sum/sum1.cpp.htm
-   
-   Tips: T(n) = O(n) - "linear-time algorithm"
-*/
+/* Question: calculate the sum of the given n integers in a recursive method */
+  
+/* For Chinese annotation, https://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/sum/sum1.cpp.htm */
 
 #include <iostream>  // cout
 
@@ -24,3 +20,5 @@ int main(){
 
     cout << sum( A, n ) << endl;
 }
+
+/* Time Complexity: O(n) - "linear-time algorithm" */

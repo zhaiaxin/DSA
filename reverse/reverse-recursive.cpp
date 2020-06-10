@@ -1,10 +1,6 @@
-/* Subject: sort an array in positive order */
-
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to http://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/reverse/reverse-recursive.cpp.htm
- 
-   Tips: T(n) = O(n) - "linear-time algorithm"
-*/
+/* Question: to transpose left and right sides of an array */
+  
+/* For Chinese annotation, http://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/reverse/reverse-recursive.cpp.htm */
 
 #include <utility>  // swap()
 #include "../utility.cpp" // printArray()
@@ -39,4 +35,6 @@ int main(){
     result:
         6 5 4 3 2 1
         5 4 3 2 1
+        
+    Time Complexity: O(n) - "linear-time algorithm"
 */

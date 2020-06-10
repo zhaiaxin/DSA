@@ -1,6 +1,4 @@
-/* This is the English annotation I wrote, according to my own understanding, 
-   if you want to query the Chinese annotation (中文注释), please move to http://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/reverse/reverse.cpp.htm
-*/
+/* For Chinese annotation, http://dsa.cs.tsinghua.edu.cn/~deng/ds/src_link/reverse/reverse.cpp.htm */
 
 /* 
     if you comment this code, you will see errors in TERMINAL,
