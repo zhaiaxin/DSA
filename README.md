@@ -2,17 +2,17 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-DSA is designed to keep track of my growth in Data Structure Algorithm.
+这个项目用来记录自己在 DSA 学习方面的成长。
 
-## Table of Contents
+## 目录
 
-- [Environment](#Environment)
-- [Reference](#Reference)
-- [Method](#Method)
-- [Usage](#Usage)
-- [TODO](#TODO)
+- [环境](#环境)
+- [学习资源](#学习资源)
+- [方法](#方法)
+- [用法](#用法)
+- [待办事项](#待办事项)
 
-## Environment
+## 环境
 
 ``` c++
     "C - Standard": "c11"
@@ -34,44 +34,45 @@ DSA is designed to keep track of my growth in Data Structure Algorithm.
 
 [OS: win10](https://www.microsoft.com/)
 
-## Reference
+## 学习资源
 
-Course:
+课程:
 
 - [数据结构(上)- 邓俊辉](https://next.xuetangx.com/course/THU08091000384/1516243?fromArray=search_result)
 
-Book:
+书籍:
 
 - [数据结构(C++语言版) 及其习题解析](https://dsa.cs.tsinghua.edu.cn/~deng/ds/dsacpp/)
 
-## Method
+## 方法
 
-main idea :  
+## 用法
 
-- Instead of passive learning, you should study more actively.
+作为一个 `C++` 新手, 我将对每一次遇到的未知语法知识，以代码注释的形式进行记录。
 
-## Usage
+同时，为了代码的简洁性和易读性，以后遇到相同用法时将不做注释。
 
-As a beginner to `C++`, I will record the first time I encounter an unknown C++ usage.
+数据类型：
 
-Also, for the sake of **Brevity and Readability** of code comments, I ignore them when I encounter the same usage in the future.
+- [`__int64`](power/power2BF_I.cpp)
 
-operational character :  
+运算符 :  
 
 - [`sizeof()`](sundry/countOnes.cpp)
 
 - [`&`](sundry/countOnes.cpp)
 
-functions :
+函数 :
 
 - [`inline`](power/power2-recursive.cpp)
 
-others :
+其他 :
 
 - [`swap()`](reverse/reverse-recursive.cpp)
 
-## TODO
+## 待办事项
 
-Something that I can't understand or handle immediately will be marked with **'TODO'** and recorded in the following list.
+目前还未理解或解决的问题将会使用 **'TODO'** 标记，并记录下下列列表中。
 
 - [reverse.h](reverse/reverse.h)
+- [fibonacci-recursive-1.cpp](fibonacci/fibonacci-recursive-1.cpp)
