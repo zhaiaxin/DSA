@@ -14,7 +14,8 @@ int countOnes( unsigned int n ){
             ones++;
         }
         */
-        ones += ( n & 1 );   // &: bit operation "AND", it will operate the binary form of two numbers
+        ones += ( n & 1 );   // &: 将两个操作数转换为 二进制 进行 "与运算", 1 & 1 = 1, 0 & 1 = 1, 
+                             //    故 '( n & 1 )' 数值上等于 n 二进制形式的最低位, 且 0 对计算结果没有影响
         n >>= 1;
     }
     return ones;
@@ -43,6 +44,8 @@ int main(){
         12(d) = 1100(b)
         8(d)  = 1000(b)
 
-    Time Complexity: O(logn) - "logarithmic-time/polylogarithmic algorithm" , because n >>= 1 equals to n = n / 2
+    Time Complexity: O(logn) = O(r) , r 是非负整数 n 二进制的位数
+
+
 
 */

@@ -21,7 +21,7 @@ int main(){
 
     int n = 5;
 
-    cout << "power2():\t" << power2(n) << endl;
+    cout << power2(n) << endl;
 
 }
 /*
@@ -32,6 +32,7 @@ int main(){
     
     power2(5) = power2(2)^2 * 2 = [power2(1)^2]^2 * 2 = ({[power2(0)^2]*2}^2)^2 * 2 = 2^5 = 32
 
-    O(logn) = O(r) [r is the size of exponent n in bits ] - "for n is logarithmic-time algorithm", "for r is linear-time algorithm"
+    TimeComplexity: O(logn) = O(r) [r is the size of exponent n in bits ] - 
+                    "for n is logarithmic-time algorithm", "for r is linear-time algorithm"
 
 */

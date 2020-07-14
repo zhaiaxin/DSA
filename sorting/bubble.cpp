@@ -23,8 +23,10 @@ void bubbleSort( int A[], int n ){
         for( int i = 1; i < n; i++ ){  // perform ONE bubble sort
             if( A[i-1] > A[i] ){
                 swap( A[i-1], A[i] );
-            }
-            sorted = false;  // After one sort is completed, the A[] CAN'T be judged as TOTALLY ordered
+                sorted = false;  // a.由于经过 n-1 次排序后, 才能认为 A[n] 已经排好序, 但如果进入 for{} 循环, 此时已排序次数必然小于 n
+                                 // b.若将 'sorted = false' 放在 if{} 外, for{} 中, 那么假定原序列本身整体有序, 
+                                 //   本来进行 1 次 for{} 比较即可, 却需要额外进行 n-2 次 for{}
+            }   
         }
         n--;  // Each time the loop is finished, one element will be placed in its final position.
     }
@@ -40,11 +42,11 @@ int main(){
 }
 
 /* 
-    Process:
+    Process:                         稳定排序
               5 2 7 4 6 3 1
         a:    2 5 4 6 3 1 7
         b:    2 4 5 3 1 6 7
-        c:    2 4 3 1 5 6 7
+        c:    2 4 3 1 5 6 7                
         d:    2 3 1 4 5 6 7
         e:    2 1 3 4 5 6 7
         f:    1 2 3 4 5 6 7

@@ -12,6 +12,9 @@ int sumI( int A[], int n ){
     for( int i = 0; i < n; i++ ){
         sum += A[i];
     }
+    // while( n >= 0 ){  // 这样也可以，不过需要注意 n >= 0 和 -- n
+    //     sum += A[--n];
+    // }
     return sum;
 }
 

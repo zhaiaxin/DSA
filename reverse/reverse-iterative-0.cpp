@@ -14,7 +14,8 @@ void reverse( int *A, int lo, int hi ){
         if( lo < hi ){
             swap( A[lo], A[hi] );
             lo ++; hi --;
-            goto next;  // 'goto' goes against the principle of "Programmed Structure Design" ( does harm to the clarity and readablity of the program )
+            goto next;  // 'goto' goes against the principle of "Programmed Structure Design" 
+                        // ( does harm to the clarity and readablity of the program )
         }  // the hiden 'else' includes "lo == hi" and "lo > hi"
 }
 

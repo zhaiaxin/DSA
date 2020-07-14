@@ -13,3 +13,8 @@ void printArray( int A[], int n ){
     }
     cout << endl;
 }
+
+int main(){
+
+   cout << rand()%10 << endl;
+}

@@ -52,23 +52,41 @@
 
 同时，为了代码的简洁性和易读性，以后遇到相同用法时将不做注释。
 
-数据类型：
+预处理 :
+
+- [`#define`](countOnes/countOnes-2.cpp)
+
+数据类型 :
 
 - [`__int64`](power/power2BF_I.cpp)
 
+- [`typedef`](vector/vector.h)
+
+- [`const`](vector/vector.h)
+
 运算符 :  
 
-- [`sizeof()`](sundry/countOnes.cpp)
+- [`sizeof()`](countones/countOnes-0.cpp))
 
-- [`&`](sundry/countOnes.cpp)
+- [`&`](countones/countOnes-0.cpp)
 
 函数 :
 
 - [`inline`](power/power2-recursive.cpp)
 
-其他 :
-
 - [`swap()`](reverse/reverse-recursive.cpp)
+
+特殊 :
+
+- [`template`](vector/vector.h)
+
+- [`public, protected, private`](vector/vector.h)
+
+- [`new, delete`](vector/vector.h)
+
+- [`* 指针`](vector/copyFrom.h)
+
+- [`& 引用`](fibonacci/fibonacci-recursive-1.cpp)
 
 ## 待办事项
 
@@ -76,3 +94,6 @@
 
 - [reverse.h](reverse/reverse.h)
 
+- [countOnes-2.cpp](countOnes/countOnes-2.cpp)
+
+- [operator.h](vector/operator.h)

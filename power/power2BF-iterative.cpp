@@ -24,12 +24,14 @@ int main(){
 }
 
 /*
-    process: 50(d) = 32 + 16 + 2(d) = 110010(b)
+    process: 50(d) = 32 + 16 + 2(d) = 11 0010(b)
 
     result: power2BF_I(n) = 1125899906842624 = 2^50
 
     tips: 2^6 < 50 < 2^7, r =  rounded down(log_2 50) + 1  = 6 + 1 = 7 
 
-    Time Complexity: O(n) = O(2^r) [r is the size of exponent n in bits ] - "for n is linear-time algorithm", "for r is exponential-time algorithm"
+    Time Complexity: O(n) = O(2^r) [r is the size of exponent n in bits ] - 
+    
+                    "for n is linear-time algorithm", "for r is exponential-time algorithm"
 
 */

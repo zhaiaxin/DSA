@@ -2,12 +2,12 @@
 
 using namespace std;
 
-void max2( int A[], int lo, int hi, int & x1, int & x2 ){
-    x1 = lo;
-    for( int i = lo + 1; i < hi; i++ )  
-        if ( A[x1] < A[i] ) x1 = i;
-    for( )
-}
+// void max2( int A[], int lo, int hi, int & x1, int & x2 ){
+//     x1 = lo;
+//     for( int i = lo + 1; i < hi; i++ )  
+//         if ( A[x1] < A[i] ) x1 = i;
+//     for( )
+// }
 
 
 

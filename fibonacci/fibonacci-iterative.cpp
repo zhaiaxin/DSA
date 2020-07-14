@@ -6,11 +6,10 @@
 
 using namespace std;
 
-// f = fib(k), g = fib(k+1)
 __int64 fib( int n ){
     __int64 f = 1, g = 0;  // 初始化 fib(-1) = f = 1, fib(0) = g = 0, 这样 fib(1) = fib(-1) + fib(0) = 1
     while ( 0 < n-- ){
-        g += f;  // 'g += f', 此时 g = fib(k+2) = fib(k+1) + fib(k)
+        g += f;  // 'g += f', 此时 g = fib(k+1) + fib(k) 即为 fib(k+2) 
         f = g - f;  //  'f = g - f'，此时 f = fib(k+2) - fib(k) = fib(k+1)
     }  
     return g;
@@ -29,14 +28,15 @@ int main(){
 
         fibonacci: 0, 1, 1, 2, 3, 5, 8, 13 ...
 
-            n = 4: f = 0, g = 1;
-            n = 3: f = 1, g = 1;
-            n = 2: f = 1, g = 2;
-            n = 1: f = 2, g = 3;
+            n = 4: f = 0 = fib(0), g = 1 = fib(1);
+            n = 3: f = 1 = fib(1), g = 1 = fib(2);
+            n = 2: f = 1 = fib(2), g = 2 = fib(3);
+            n = 1: f = 2 = fib(3), g = 3 = fib(4);
 
         fib(4) = 3
 
     时间复杂度: O(n), 此题用到 动态规划 的思想：从递归基出发，自底而上递推得出各子问题的解，直至最终原问题的解
 
     空间复杂度：O(1), 只需要 g 和 f , 两个存储单元，故只需要常数的空间。
+    
 */
