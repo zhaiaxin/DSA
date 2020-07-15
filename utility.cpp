@@ -14,7 +14,18 @@ void printArray( int A[], int n ){
     cout << endl;
 }
 
+// bool equal(int* a, int* b){
+//     return equal(*a, *b);
+// }
+
+bool equal(int& a, int& b){
+    return a && b;
+}
+
 int main(){
 
-   cout << rand()%10 << endl;
+    int a = 1, b = 0;
+
+    cout << equal(a, b) << endl;
 }
+

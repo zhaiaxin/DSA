@@ -70,6 +70,8 @@
 
 - [`&`](countones/countOnes-0.cpp)
 
+- [`&&`](vector/find.h)
+
 函数 :
 
 - [`inline`](power/power2-recursive.cpp)
@@ -86,7 +88,11 @@
 
 - [`* 指针`](vector/copyFrom.h)
 
+- [`指针: 数组名计算`](vector/unsort.h)
+
 - [`& 引用`](fibonacci/fibonacci-recursive-1.cpp)
+
+- [`static 静态类成员函数`](vector/equalizer&comparator.h)
 
 ## 待办事项
 
