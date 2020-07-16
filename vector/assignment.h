@@ -1,7 +1,7 @@
 #include "vector.h"
 
 template <typename T> 
-Vector<T>& Vector<T>::operator= ( Vector<T> const& V ){  // 重载赋值操作
+Vector<T>& Vector<T>::operator= ( Vector<T> const& V ){  // 重载赋值操作: `Vector<T>&` 表明返回 Vector<T> 类的引用 
     if( _elem ) delete [] _elem;  // 释放原有内容, 若 _elem != 0, 则将其数据区清空
     copyFrom( V._elem, 0, V.size() );  // 整体复制, V.size() 返回当前变量的规模
     /*

@@ -1,6 +1,6 @@
 #include "vector.h"
 
-template <typename T> Rank Vector<T>::find( T const& e, Rank lo, Rank hi ) const {  // 默认条件: 0 <- lo < hi <= _size
+template <typename T> Rank Vector<T>::find( T const& e, Rank lo, Rank hi ) const {  // 默认条件: 0 <= lo < hi <= _size
     /*
         逻辑与运算`&&` :当左右两个操作数都非零的时候, 返回值为真(1); 否则, 返回假(0)
     */

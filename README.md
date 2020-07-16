@@ -100,6 +100,4 @@
 
 - [reverse.h](reverse/reverse.h)
 
-- [countOnes-2.cpp](countOnes/countOnes-2.cpp)
-
-- [operator.h](vector/operator.h)
+- [traverse.h](vector/traverse.h)
